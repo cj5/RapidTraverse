@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,100' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" id="font-awesome-css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+	</head>
+
+	<body>
+		<h1> Rapid Traverse </h1> 
+
+		<div class="image-wrapper">
+			<div class="main-image">
+				<img src="images/sunset.jpg">
+			</div>	
+		</div>
+
+		<!-- MAIN NAV LIST -->
+		<div class="nav-wrapper">
+			<div class="main-nav">
+				<ul>
+					<li class="main-nav-list"><a class="main-nav-list" href="#Music">Music</a></li>
+					<li class="main-nav-list"><a class="main-nav-list" href="#About">About</a></li>
+					<li class="main-nav-list"><a class="main-nav-list" href="#Equipment">Equipment</a></li>
+				</ul>
+			</div>
+		</div>	
+
+		<!-- MUSIC SECTION -->
+
+		<div class="souncloud">
+			<h2 id="Music">Music</h2>
+			<div class="music-wrapper">	
+				<iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/146278870&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+				<iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/144316466&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+				<iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/144281052&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+				<iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/167198807&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+			</div>
+		</div>
+
+		<!-- ABOUT SECTION -->
+		<div class="about-wrapper">
+			<h2 id="About">About</h2>
+			<div class="col-2 description">
+				<p>I'm a 23 year old from Saint Paul, Minnesota who loves to create music. Lately, I've been focused on making electronic music using a midi keyboard and Reason software. Check out my songs and enjoy!</p>
+			</div>
+			<div class="col-2">		
+				<img src="images/me.jpg"/>
+			</div>
+		</div>
+
+		<!-- EQUIPMENT SECTION -->
+		<div class="equipment-wrapper">
+			<h2 id="Equipment">Equipment</h2>
+			<div class="col-2 description">		
+				<img src="images/recording.jpg"/>
+			</div>
+			<div class="col-2">
+				<ul class="equip-list">
+					<li class="equip">Alesis QX49 Midi Keyboard</li>
+					<li class="equip">Reason 5</li>
+					<li class="equip">Macbook Pro</li>
+					<li class="equip">2 Yamaha HS-5 studio monitors</li>
+					<li class="equip">AOC monitor</li>
+				</ul>
+			</div>	
+		</div>
+		<div class="scroll-top-wrapper ">
+		    <span class="scroll-top-inner">
+		        <i class="fa fa-2x fa-arrow-circle-up"></i>
+		    </span>
+		</div>
+	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>
+			$(function(){
+			 
+			    $(document).on( 'scroll', function(){
+			 
+			        if ($(window).scrollTop() > 500) {
+			            $('.scroll-top-wrapper').addClass('show');
+			        } else {
+			            $('.scroll-top-wrapper').removeClass('show');
+			        }
+			    });
+			 
+			    $('.scroll-top-wrapper').on('click', scrollToTop);
+			});
+			 
+			function scrollToTop() {
+			    verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+			    element = $('body');
+			    offset = element.offset();
+			    offsetTop = offset.top;
+			    $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+			}
+		</script>
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
